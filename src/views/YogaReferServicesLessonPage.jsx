@@ -41,10 +41,10 @@ const STEPS = [
         <br/><br/>
         Examples include:
         <ul style={{ margin: '8px 0 0', paddingLeft: '20px', lineHeight: '1.6' }}>
-          <li><strong>Fitness</strong> – Strength training, endurance, weight loss, or overall fitness improvement.</li>
-          <li><strong>Dietitian / Nutrition</strong> – Meal planning, weight management, lifestyle diseases, and healthy eating.</li>
-          <li><strong>Physiotherapy</strong> – Injury rehabilitation, posture correction, chronic pain, and mobility improvement.</li>
-          <li><strong>Women's Wellness</strong> – Prenatal and postnatal care, hormonal wellness, and women's health support.</li>
+          <li><strong>Fitness</strong> - Strength training, endurance, weight loss, or overall fitness improvement.</li>
+          <li><strong>Dietitian / Nutrition</strong> - Meal planning, weight management, lifestyle diseases, and healthy eating.</li>
+          <li><strong>Physiotherapy</strong> - Injury rehabilitation, posture correction, chronic pain, and mobility improvement.</li>
+          <li><strong>Women's Wellness</strong> - Prenatal and postnatal care, hormonal wellness, and women's health support.</li>
         </ul>
         <br/>
         Always explain how these services complement their yoga practice.

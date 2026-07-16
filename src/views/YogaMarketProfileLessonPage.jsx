@@ -10,7 +10,7 @@ import {
 import { Clock, Award, UserCheck, Share2, FileText, CheckCircle2, Mail, Lightbulb } from 'lucide-react';
 
 const LESSON_ID     = 'yoga-market-profile';
-const LESSON_TITLE  = 'Market Your Profile – Yoga Experts';
+const LESSON_TITLE  = 'Market Your Profile - Yoga Experts';
 const REWARD_POINTS = 5;
 
 export default function YogaMarketProfileLessonPage({ onBack }) {

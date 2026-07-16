@@ -1,49 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import ClientDashboard from './views/ClientDashboard';
 import LessonTemplate from './views/LessonTemplate';
+
 import UnderstandDepressionLessonPage from './views/UnderstandDepressionLessonPage';
 import SelfCheckLowMoodLessonPage from './views/SelfCheckLowMoodLessonPage';
 import EmotionalWellbeingAssessmentPage from './views/EmotionalWellbeingAssessmentPage';
-import PremiumProviderLessonPage from './views/PremiumProviderLessonPage';
 import HowCanTherapyHelpLessonPage from './views/HowCanTherapyHelpLessonPage';
-import MarketYourselfLessonPage from './views/MarketYourselfLessonPage';
-import ShareLinkedinLessonPage from './views/ShareLinkedinLessonPage';
-import ShowAchievementsLessonPage from './views/ShowAchievementsLessonPage';
-import GettingPaidLessonPage from './views/GettingPaidLessonPage';
-import TherapyInternProgramLessonPage from './views/TherapyInternProgramLessonPage';
-import TherapyNotesLessonPage from './views/TherapyNotesLessonPage';
-import CoupleTherapyLessonPage from './views/CoupleTherapyLessonPage';
-import CreatingPathwayLessonPage from './views/CreatingPathwayLessonPage';
-import CannedResponsesLessonPage from './views/CannedResponsesLessonPage';
-import MantraAssessmentsLessonPage from './views/MantraAssessmentsLessonPage';
-import SupportHotlineLessonPage from './views/SupportHotlineLessonPage';
-import CorporateEapLessonPage from './views/CorporateEapLessonPage';
-import CommunityManagementLessonPage from './views/CommunityManagementLessonPage';
-import ContentCreationLessonPage from './views/ContentCreationLessonPage';
-import CampusAwarenessLessonPage from './views/CampusAwarenessLessonPage';
-import FundRaisingLessonPage from './views/FundRaisingLessonPage';
-import RecruitInternsLessonPage from './views/RecruitInternsLessonPage';
-import ReferServicesLessonPage from './views/ReferServicesLessonPage';
-import ConvertingClientsLessonPage from './views/ConvertingClientsLessonPage';
-import InsuranceLessonPage from './views/InsuranceLessonPage';
 import BookJoinSessionLessonPage from './views/BookJoinSessionLessonPage';
 import HowTherapymantraWorksLessonPage from './views/HowTherapymantraWorksLessonPage';
 import CreateWellbeingPlanLessonPage from './views/CreateWellbeingPlanLessonPage';
 import EarnWhileYouImproveLessonPage from './views/EarnWhileYouImproveLessonPage';
-import EarnPointsLessonPage from './views/EarnPointsLessonPage';
-import ReferProviderLessonPage from './views/ReferProviderLessonPage';
-import SalesPartnerLessonPage from './views/SalesPartnerLessonPage';
-import CertificateDownloadPage from './views/CertificateDownloadPage';
-import TherapyProviderCertificatePage from './views/TherapyProviderCertificatePage';
-import TopListenerLessonPage from './views/TopListenerLessonPage';
-import ListenerCertificatePage from './views/ListenerCertificatePage';
-import YogaPathwayLessonPage from './views/YogaPathwayLessonPage';
-import YogaRoutineLessonPage from './views/YogaRoutineLessonPage';
-import YogaMindfulnessLessonPage from './views/YogaMindfulnessLessonPage';
-import YogaNudgingLessonPage from './views/YogaNudgingLessonPage';
-import YogaReferServicesLessonPage from './views/YogaReferServicesLessonPage';
-import YogaMarketProfileLessonPage from './views/YogaMarketProfileLessonPage';
-import YogaCertificatePage from './views/YogaCertificatePage';
+
 import {
   BookOpen,
   Award,
@@ -52,7 +19,6 @@ import {
   Trophy
 } from 'lucide-react';
 import './App.css';
-import { MANTRA_CONFIG } from './mantra';
 import { activities } from './mantra/activities';
 import ErrorBoundary from './components/ErrorBoundary';
 
@@ -83,7 +49,7 @@ function App() {
       path: activity.route,
       duration: activity.estimatedDuration,
       points: activity.rewardPoints,
-      category: activity.route.includes('intern') || activity.route.includes('support') || activity.route.includes('corporate') || activity.route.includes('campus') ? 'Initiative' : 'Lesson',
+      category: 'Lesson', // All client activities are lessons/assessments
       pathway: activity.pathway || 'General Health'
     }));
 
@@ -99,364 +65,41 @@ function App() {
     }
 
     if (currentPath === '/self-check-low-mood') {
-      return (
-        <SelfCheckLowMoodLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
+      return <SelfCheckLowMoodLessonPage onBack={() => navigate('/')} />;
     }
 
     if (currentPath === '/understand-depression') {
-      return (
-        <UnderstandDepressionLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
+      return <UnderstandDepressionLessonPage onBack={() => navigate('/')} />;
     }
 
     if (currentPath === '/book-join-session') {
-      return (
-        <BookJoinSessionLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
+      return <BookJoinSessionLessonPage onBack={() => navigate('/')} />;
     }
 
     if (currentPath === '/how-therapymantra-works') {
-      return (
-        <HowTherapymantraWorksLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
+      return <HowTherapymantraWorksLessonPage onBack={() => navigate('/')} />;
     }
 
     if (currentPath === '/create-your-personalized-wellbeing-plan') {
-      return (
-        <CreateWellbeingPlanLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/profile-verification') {
-      window.location.href = 'https://provider.mantracare.com/verification';
-      return null;
+      return <CreateWellbeingPlanLessonPage onBack={() => navigate('/')} />;
     }
 
     if (currentPath === '/emotional-wellbeing-assessment') {
-      return (
-        <EmotionalWellbeingAssessmentPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/premium-provider') {
-      return (
-        <PremiumProviderLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
+      return <EmotionalWellbeingAssessmentPage onBack={() => navigate('/')} />;
     }
 
     if (currentPath === '/how-can-therapy-help') {
-      return (
-        <HowCanTherapyHelpLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/market-yourself') {
-      return (
-        <MarketYourselfLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/share-linkedin') {
-      return (
-        <ShareLinkedinLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/show-achievements') {
-      return (
-        <ShowAchievementsLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/getting-paid') {
-      return (
-        <GettingPaidLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/intern-program') {
-      return (
-        <TherapyInternProgramLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/therapy-notes') {
-      return (
-        <TherapyNotesLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/couple-therapy') {
-      return (
-        <CoupleTherapyLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/creating-pathway') {
-      return (
-        <CreatingPathwayLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/canned-responses') {
-      return (
-        <CannedResponsesLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/mantra-assessments') {
-      return (
-        <MantraAssessmentsLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/support-hotline') {
-      return (
-        <SupportHotlineLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/corporate-eap') {
-      return (
-        <CorporateEapLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/community-management') {
-      return (
-        <CommunityManagementLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/content-creation') {
-      return (
-        <ContentCreationLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/campus-awareness') {
-      return (
-        <CampusAwarenessLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/fundraising') {
-      return (
-        <FundRaisingLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/recruit-interns') {
-      return (
-        <RecruitInternsLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/refer-services') {
-      return (
-        <ReferServicesLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/converting-clients') {
-      return (
-        <ConvertingClientsLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/insurance') {
-      return (
-        <InsuranceLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
+      return <HowCanTherapyHelpLessonPage onBack={() => navigate('/')} />;
     }
 
     if (currentPath === '/earn-while-you-improve-your-wellbeing') {
-      return (
-        <EarnWhileYouImproveLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/earn-points') {
-      return (
-        <EarnPointsLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/refer-provider') {
-      return (
-        <ReferProviderLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/sales-partner') {
-      return (
-        <SalesPartnerLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/download-certificate') {
-      return (
-        <CertificateDownloadPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/provider-certificate') {
-      return (
-        <TherapyProviderCertificatePage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/top-listener-recognition') {
-      return (
-        <TopListenerLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/listener-certificate') {
-      return (
-        <ListenerCertificatePage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/yoga-pathway') {
-      return (
-        <YogaPathwayLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/yoga-routine') {
-      return (
-        <YogaRoutineLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/yoga-mindfulness') {
-      return (
-        <YogaMindfulnessLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/yoga-nudging') {
-      return (
-        <YogaNudgingLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/yoga-refer-services') {
-      return (
-        <YogaReferServicesLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/yoga-market-profile') {
-      return (
-        <YogaMarketProfileLessonPage
-          onBack={() => navigate('/')}
-        />
-      );
-    }
-
-    if (currentPath === '/yoga-certificate') {
-      return (
-        <YogaCertificatePage
-          onBack={() => navigate('/')}
-        />
-      );
+      return <EarnWhileYouImproveLessonPage onBack={() => navigate('/')} />;
     }
 
     if (currentPath !== '/') {
       const activeLesson = activities.find(t => t.route === currentPath);
-
       if (activeLesson) {
-        return (
-          <LessonTemplate
-            lesson={activeLesson}
-            onBack={() => navigate('/')}
-          />
-        );
+        return <LessonTemplate lesson={activeLesson} onBack={() => navigate('/')} />;
       }
     }
 

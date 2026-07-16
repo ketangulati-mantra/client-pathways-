@@ -69,7 +69,7 @@ const STAGES = [
         heading: 'Verification Process',
         items: [
           'Upload practitioner credentials and licences (PDF or JPEG, max 5 MB).',
-          'Compliance team reviews your submission within 1–2 business days.',
+          'Compliance team reviews your submission within 1-2 business days.',
         ]
       }
     ]

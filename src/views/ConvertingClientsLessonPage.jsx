@@ -85,7 +85,7 @@ export default function ConvertingClientsLessonPage({ onBack }) {
               <Target size={20} /> Goal
             </h3>
             <p style={{ margin: 0, color: '#0c4a6e', fontSize: '1.05rem', lineHeight: '1.6', fontWeight: 500 }}>
-              Help clients understand the value of continued therapy by focusing on their long-term well-being—not by selling.
+              Help clients understand the value of continued therapy by focusing on their long-term well-being - not by selling.
             </p>
           </div>
         </section>
@@ -186,7 +186,7 @@ export default function ConvertingClientsLessonPage({ onBack }) {
               Remember
             </h3>
             <p style={{ margin: 0, fontSize: '1.25rem', lineHeight: '1.6', fontWeight: 300, fontStyle: 'italic', maxWidth: '600px' }}>
-              "Always frame therapy as an investment in the client's well-being—not as a transaction."
+              "Always frame therapy as an investment in the client's well-being - not as a transaction."
             </p>
           </div>
         </section>

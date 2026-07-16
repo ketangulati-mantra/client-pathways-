@@ -85,7 +85,7 @@ export default function GettingPaidLessonPage({ onBack }) {
       style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', background: 'var(--bg-app)' }}
       className="animate-fade-in"
     >
-      {/* Header — same as LessonTemplate, passes lessonProgress */}
+      {/* Header  -  same as LessonTemplate, passes lessonProgress */}
       <Header
         title={LESSON_TITLE}
         onBack={onBack}
@@ -113,7 +113,7 @@ export default function GettingPaidLessonPage({ onBack }) {
           points={`+${REWARD_POINTS}`}
         />
 
-        {/* 2. Video — first play sets videoWatched → 50% */}
+        {/* 2. Video  -  first play sets videoWatched → 50% */}
         <section style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           <h3 style={{ fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '1.2rem', textAlign: 'left', display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span>Video Tutorial</span>
@@ -165,7 +165,7 @@ export default function GettingPaidLessonPage({ onBack }) {
         </section>
       </main>
 
-      {/* Completion modal — same as LessonTemplate, triggered after 800ms delay */}
+      {/* Completion modal  -  same as LessonTemplate, triggered after 800ms delay */}
       {showCelebrate && (
         <CompletionScreen
           points={REWARD_POINTS}

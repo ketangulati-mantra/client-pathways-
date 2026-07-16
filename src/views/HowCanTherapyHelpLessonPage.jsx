@@ -40,7 +40,7 @@ export default function HowCanTherapyHelpLessonPage({ onBack }) {
             Transform Your Life with Therapy
           </h1>
           <p style={{ fontSize: '1.15rem', color: '#334155', lineHeight: '1.6', margin: '0 auto', maxWidth: '600px' }}>
-            Therapy is not just talking—it is a structured, evidence-based process designed to help you understand your emotions, overcome challenges, and create lasting positive change.
+            Therapy is not just talking - it is a structured, evidence-based process designed to help you understand your emotions, overcome challenges, and create lasting positive change.
           </p>
         </section>
 
@@ -153,7 +153,7 @@ export default function HowCanTherapyHelpLessonPage({ onBack }) {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <span style={{ fontSize: '1.2rem' }}>✔️</span>
-              <span style={{ fontSize: '1.05rem', color: '#334155' }}><strong>Structured:</strong> It's more than talking—it's a guided process using CBT and DBT.</span>
+              <span style={{ fontSize: '1.05rem', color: '#334155' }}><strong>Structured:</strong> It's more than talking - it's a guided process using CBT and DBT.</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <span style={{ fontSize: '1.2rem' }}>✔️</span>

@@ -45,7 +45,7 @@ const WAYS_TO_PARTICIPATE = [
   { icon: Users, title: 'Introduce a Client', description: 'Introduce MantraCare to a client or professional in your network.' },
   { icon: Building2, title: 'Recommend Companies', description: 'Share organizations where Employee Assistance Programs (EAPs) could be valuable.' },
   { icon: Share2, title: 'Make an Introduction', description: 'Connect our team with an HR leader or decision-maker through LinkedIn or email.' },
-  { icon: BookOpen, title: 'Learn More', description: 'Not ready today? That\'s okay—you can explore the program and participate whenever you\'re comfortable.' }
+  { icon: BookOpen, title: 'Learn More', description: 'Not ready today? That\'s okay - you can explore the program and participate whenever you\'re comfortable.' }
 ];
 
 export default function SalesPartnerLessonPage({ onBack }) {

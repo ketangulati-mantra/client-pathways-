@@ -29,7 +29,7 @@ const STEPS = [
           <li>Guided relaxation</li>
         </ul>
         <br/>
-        Practice together for approximately 5–10 minutes.
+        Practice together for approximately 5-10 minutes.
       </>
     )
   },

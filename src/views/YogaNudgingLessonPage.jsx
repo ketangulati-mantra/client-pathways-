@@ -22,7 +22,7 @@ const STEPS = [
         <br/><br/>
         Examples include:
         <ul style={{ margin: '8px 0 0', paddingLeft: '20px', lineHeight: '1.6' }}>
-          <li>10–20 minutes of yoga</li>
+          <li>10-20 minutes of yoga</li>
           <li>5 minutes of breathing exercises</li>
           <li>A short morning stretching routine</li>
           <li>Evening relaxation practice</li>
@@ -43,7 +43,7 @@ const STEPS = [
         <ul style={{ margin: '8px 0 0', paddingLeft: '20px', lineHeight: '1.6' }}>
           <li>"Have you completed today's yoga practice?"</li>
           <li>"A few mindful breaths can make a big difference today."</li>
-          <li>"Keep your streak going—you're doing great!"</li>
+          <li>"Keep your streak going - you're doing great!"</li>
         </ul>
         <br/>
         Supportive reminders are more effective than pressure.
