@@ -16,6 +16,24 @@ export interface Activity {
 
 export const activities: Activity[] = [
   {
+    lessonId: 'self-check-low-mood',
+    activityId: '',
+    pathway: 'Depression',
+    title: 'A Self-Check for Low Mood',
+    rewardPoints: 100,
+    estimatedDuration: '5–7 min',
+    route: '/self-check-low-mood'
+  },
+  {
+    lessonId: 'understand-depression',
+    activityId: '',
+    pathway: 'Depression',
+    title: 'Understand What is Depression?',
+    rewardPoints: 50,
+    estimatedDuration: '4 min',
+    route: '/understand-depression'
+  },
+  {
     lessonId: 'book-join-session',
     activityId: '', // Filled in during backend integration
     pathway: 'Foundational Therapy',

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ClientDashboard from './views/ClientDashboard';
 import LessonTemplate from './views/LessonTemplate';
+import UnderstandDepressionLessonPage from './views/UnderstandDepressionLessonPage';
+import SelfCheckLowMoodLessonPage from './views/SelfCheckLowMoodLessonPage';
 import EmotionalWellbeingAssessmentPage from './views/EmotionalWellbeingAssessmentPage';
 import PremiumProviderLessonPage from './views/PremiumProviderLessonPage';
 import HowCanTherapyHelpLessonPage from './views/HowCanTherapyHelpLessonPage';
@@ -92,6 +94,22 @@ function App() {
         <ClientDashboard
           tasks={dashboardTasks}
           onNavigate={navigate}
+        />
+      );
+    }
+
+    if (currentPath === '/self-check-low-mood') {
+      return (
+        <SelfCheckLowMoodLessonPage
+          onBack={() => navigate('/')}
+        />
+      );
+    }
+
+    if (currentPath === '/understand-depression') {
+      return (
+        <UnderstandDepressionLessonPage
+          onBack={() => navigate('/')}
         />
       );
     }
